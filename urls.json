@@ -1,1 +1,1 @@
-urls = '[{"url" : "https://www.vox.com/rss/index.xml"},{"url" : "https://www.techmeme.com/feed.xml?x=1"}]';
+urls = '[{"url" : "https://www.vox.com/rss/index.xml"},{"url" : "http://feeds.bbci.co.uk/news/world/rss.xml"}, {"url" : "https://www.stuff.co.nz/rss"}]';

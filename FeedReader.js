@@ -11,12 +11,13 @@ userFeedURLs.forEach(userUrl => {
       data.items.forEach(item => {
         var content = document.getElementById('content');
 
-        content.innerHTML += "<a href=\""+ item.link + "\"\>"
-        content.innerHTML += "<h2>" + item.title + "</h2>";
+        content.innerHTML += "<div class=\"itemtitle\"><a href=\""+ item.link + "\"><h1>" + item.title + "</h1></a>"+ " from " + data.feed.title+"</div>";
         if (item.author != "")
-          content.innerHTML += "<h4> By " + item.author + "</h4>";
+          content.innerHTML += "<h4> By " + item.author  +"</h4>";
 
-        content.innerHTML += item.description + "</a>";
+        content.innerHTML += "<h4>Published Date: " + item.pubDate + "</h4>";
+        
+        content.innerHTML += "<div class=\"desc\">"+item.description + "<hr><div>";
       });
     }
   });
