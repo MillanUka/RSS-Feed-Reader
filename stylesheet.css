@@ -11,5 +11,13 @@ h2 {
 .content {
     margin-left: 25%;
     margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     width: 50%;
+    text-align: justify;
+}
+
+.content img {
+    text-align: center;
+    max-width: 100%;
 }

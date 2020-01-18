@@ -11,11 +11,12 @@ userFeedURLs.forEach(userUrl => {
       data.items.forEach(item => {
         var content = document.getElementById('content');
 
-        content.innerHTML += "<iframe><h2>" + item.title + "</h2>";
+        content.innerHTML += "<a href=\""+ item.link + "\"\>"
+        content.innerHTML += "<h2>" + item.title + "</h2>";
         if (item.author != "")
           content.innerHTML += "<h4> By " + item.author + "</h4>";
 
-        content.innerHTML += item.description + "</iframe>";
+        content.innerHTML += item.description + "</a>";
       });
     }
   });
