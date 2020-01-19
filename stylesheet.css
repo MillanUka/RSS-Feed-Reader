@@ -29,13 +29,17 @@ p {
 }
 
 .content {
-    margin-left: 12.5%;
-    margin-right: 12.5%;
+    margin-left: 12%;
+    margin-right: 12%;
     margin-top: 5%;
     margin-bottom: 5%;
-    width: 75%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 73%;
     text-align: justify;
-    background: whitesmoke;
+    background: #F0F0F0;
 }
 
 .content img {

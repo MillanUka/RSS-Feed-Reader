@@ -11,7 +11,7 @@ userFeedURLs.forEach(userUrl => {
       data.items.forEach(item => {
         var content = document.getElementById('content');
 
-        content.innerHTML += "<div class=\"itemtitle\"><a href=\""+ item.link + "\"><h1>" + item.title + "</h1></a>"+ " from " + data.feed.title+"</div>";
+        content.innerHTML += "<div class=\"itemtitle\"><a href=\""+ item.link + "\"><h1>" + item.title + "</h1></a>"+ "<h4> from " + data.feed.title+"</h4></div>";
         if (item.author != "")
           content.innerHTML += "<h4> By " + item.author  +"</h4>";
 
