@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RSS Feed Reader</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen">
+    <title>Home</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="Global.js"></script>
 </head>
-<script type="text/javascript" src="urls.json"></script>
-<script src="jquery-3.4.1.js"></script>
-<script src="FeedReader.js"></script>
-<body>
-    
-    <div id="content" class="content">
-        <h1>RSS Feed Reader</h1>
+
+<body class="bg-dark">
+    <br>
+    <div class="container">
+        <div class="input-group mb-3 input-group">
+            <input type="text" class="form-control" id="input">
+            <div class="btn bg-primary text-white" id="confirmButton">Add RSS Feed</div>
+        </div>
+        <div class="container" style="text-align: center;">
+            <button class="btn bg-primary text-white" id="gotoFeedButton">Goto Feed</a></button>
+            <br>
+            <h1 class="display-5 text-white">How to use</h1>
+            <div class="container-sm bg-dark" style="text-align: justify">
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color:white">This is a <abbr title="Rich Site Summary">RSS</abbr> Feed Reader, it uses an <abbr title="Extensible Markup Language">XML</abbr> format to get the lastest updates on news, podcast, radio shows, etc. Try entering <mark>https://www.vox.com/rss/index.xml</mark>                    and click "Add RSS Feed" and then click "Goto RSS Feed" to see the lastest updates from Vox.</p>
+            </div>
+        </div>
     </div>
+    <div class="container">
+        <h1 class="display-3 text-white">RSS Feed URL List</h1>
+        <div class="container-sm border border-white" style="overflow-y: scroll; height:150px; width: auto;">
+            <ul class="list-group" id="urlList">
+        </div>
+        </ul>
+    </div>
+    </div>
+    <script src="AddFeed.js"></script>
 </body>
+
 </html>
