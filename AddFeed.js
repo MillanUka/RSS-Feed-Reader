@@ -7,6 +7,10 @@ function handleConfirm() {
 }
 
 function handleGotoFeed() {
+    if (userFeedURLs.length == 0) {
+        alert("You haven't entered any RSS feeds");
+        return;
+    }
     localStorage.setItem('userFeedURLs', userFeedURLs);
     window.location.href = 'feed.html';
 }
@@ -19,7 +23,7 @@ function addFeedURL(url) {
     userFeedURLs.push(url);
     document.getElementById("input").value = "";
 
-    var listElement = "<li class=\"list-group-item border border-dark\"><h5>" + url + "</h5></li>"
+    var listElement = "<li class=\"list-group-item border border-dark bg-white\"><h5>" + url + "</h5></li>"
     console.log(listElement);
     document.getElementById("urlList").insertAdjacentHTML('beforeend', listElement)
 }
