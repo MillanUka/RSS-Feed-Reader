@@ -16,22 +16,23 @@
 
 <body class="bg-dark">
     <br>
-    <div class="container">
+    <div class="container-xl">
         <h1 class="display-2" style="text-align: center; color: white">RSS Feed Reader</h1>
         <div class="input-group mb-3 input-group">
             <input type="text" class="form-control" id="input">
-            <div class="btn bg-primary text-white" id="confirmButton">Add RSS Feed</div>
+            <div class="btn bg-primary text-white" id="confirmButton">Add</div>
         </div>
         <div class="container" style="text-align: center;">
             <button class="btn bg-primary text-white" id="gotoFeedButton">Goto Feed</a></button>
             <br>
             <h1 class="display-5 text-white">How to use</h1>
-            <div class="container-sm bg-dark" style="text-align: justify">
-                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color:white">This is a <abbr title="Rich Site Summary">RSS</abbr> Feed Reader, it uses an <abbr title="Extensible Markup Language">XML</abbr> format to get the lastest updates on news, podcast, radio shows, etc. Try entering <mark>https://www.vox.com/rss/index.xml</mark>                    and click "Add RSS Feed" and then click "Goto RSS Feed" to see the lastest updates from Vox.</p>
+            <div class="container-sm bg-dark" style="text-align: left">
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color:white">This is a <abbr title="Rich Site Summary">RSS</abbr> Feed Reader, it uses an <abbr title="Extensible Markup Language">XML</abbr> format. It can be used to get the lastest updates on news, podcast, radio shows, etc. To try it out try entering
+                    <code>www.vox.com/rss/index.xml</code> and click "Add" to add the url to the list, and then click "Goto RSS Feed" to see the lastest updates from Vox. Many of your favourite media outlets have RSS Feeds, try adding them in too.</p>
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container-xl">
         <h1 class="display-3 text-white">RSS Feed URL List</h1>
         <div class="container-sm border border-white rounded" style="overflow-y: scroll; height:100px; width: auto;">
             <ul class="list-group" id="urlList">
