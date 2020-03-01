@@ -16,6 +16,7 @@ function handleGotoFeed() {
 }
 
 function addFeedURL(url) {
+    RemoveHtmlTagsFromURL(url);
     if (url == "") {
         alert("Please enter a RSS URL!")
         return;
@@ -26,4 +27,9 @@ function addFeedURL(url) {
     var listElement = "<li class=\"list-group-item border border-dark bg-white\"><h5>" + url + "</h5></li>"
     console.log(listElement);
     document.getElementById("urlList").insertAdjacentHTML('beforeend', listElement)
+}
+
+
+function RemoveHtmlTagsFromURL(url) {
+    return url.replace(/(<([^>]+)>)/ig, "");
 }
