@@ -8,8 +8,3 @@ This is a basic web based RSS feed reader written using HTML, CSS and Javascript
 
 # How To Use
 This application uses <a href="https://en.wikipedia.org/wiki/RSS">RSS Feeds</a> in the XML format to get informations and news. To add RSS feeds simply add your desired RSS feeds url to the urls.json file. A good website to find RSS feeds is <a href="https://rss.com/blog/popular-rss-feeds/">RSS.com</a>.  
-
-Add them to the json file seperate by commas like below(By Default there is already three RSS URLs for testing)
-```json
-urls = '[{"url" : "[Your URL]"},{"url" : "[Your URL]"}]';
-```
